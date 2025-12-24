@@ -10,8 +10,7 @@ export default function DashboardPage() {
       <main className="flex-1 lg:ml-[290px] p-8 md:p-12 transition-all">
         <header className="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 gap-4">
           <div>
-            <p className="text-sm font-medium text-[#707EAE] mb-1">홈 / 대시보드</p>
-            <h1 className="text-[34px] font-bold text-[#2B3674] tracking-tight leading-tight">대시보드</h1>
+            <h1 className="text-[34px] font-bold text-[#2B3674] tracking-tight leading-tight">TODO월 청구 현황</h1>
           </div>
           <div className="flex items-center gap-4 bg-white p-3 pl-5 rounded-full shadow-sm shadow-gray-100">
              <input type="text" placeholder="검색..." className="bg-[#F4F7FE] rounded-full px-4 py-2 text-sm focus:outline-none w-40 hidden md:block" />

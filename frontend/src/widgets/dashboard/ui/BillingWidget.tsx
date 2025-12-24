@@ -2,7 +2,7 @@ export const BillingWidget = () => {
   return (
     <div className="bg-white p-8 rounded-[30px] shadow-sm h-full flex flex-col justify-center">
       <div className="flex justify-between items-center mb-8">
-        <h4 className="text-2xl font-bold text-[#2B3674]">8월 청구 현황</h4>
+        <h4 className="text-2xl font-bold text-[#2B3674]">공지사항</h4>
         <span className="text-sm font-bold text-[#4318FF] bg-[#F4F7FE] px-4 py-2 rounded-full">총 53건</span>
       </div>
 

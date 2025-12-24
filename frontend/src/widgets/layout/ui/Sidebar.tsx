@@ -14,7 +14,7 @@ export const Sidebar = () => {
     <aside className="w-[290px] bg-white h-screen fixed left-0 top-0 border-r border-gray-100 hidden lg:flex flex-col p-6 z-50 font-medium">
       <div className="flex items-center gap-2 mb-12 px-4 py-4">
         <div className="text-3xl font-black text-[#2B3674] tracking-tight">
-          PAYMENT GATEWAY
+          PAYHUB
         </div>
       </div>
       <nav className="flex flex-col gap-3 flex-1">

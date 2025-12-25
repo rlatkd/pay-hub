@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>로그인</title>
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; padding-top: 100px; }
+        .container { width: 300px; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+        input { width: 100%; padding: 10px; margin-bottom: 10px; box-sizing: border-box; }
+        button { width: 100%; padding: 10px; background-color: #007bff; color: white; border: none; cursor: pointer; }
+        .error { color: red; margin-top: 10px; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 style="text-align: center;">System Login</h2>
+        
+        <form hx-post="/login" hx-target="#message" hx-swap="innerHTML">
+            <input type="text" name="user_id" placeholder="아이디" required>
+            <input type="password" name="password" placeholder="비밀번호" required>
+            <button type="submit">로그인</button>
+        </form>
+
+        <div id="message"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+services:
+  auth:
+    container_name: auth
+    build:
+      context: ./database/auth
+      dockerfile: Dockerfile
+    ports:
+      - "3300:3306"
+    volumes:
+      - auth_volumes:/var/lib/mysql
+    restart: unless-stopped
+
+  channel:
+    container_name: channel
+    build:
+      context: ./database/channel
+      dockerfile: Dockerfile
+    ports:
+      - "3301:3306"
+    volumes:
+      - channel_volumes:/var/lib/mysql
+    restart: unless-stopped
+
+  core:
+    container_name: core
+    build:
+      context: ./database/core
+      dockerfile: Dockerfile
+    ports:
+      - "3302:3306"
+    volumes:
+      - core_volumes:/var/lib/mysql
+    restart: unless-stopped
+
+  cache:
+    container_name: cache
+    build:
+      context: ./cache
+      dockerfile: Dockerfile
+    ports:
+      - "6379:6379"
+    volumes:
+      - cache_volumes:/data
+    restart: unless-stopped
+  
+volumes:
+  auth_volumes:
+    driver: local
+  cache_volumes:
+    driver: local
+  channel_volumes:
+    driver: local
+  core_volumes:
+    driver: local
+    

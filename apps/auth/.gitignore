@@ -1,0 +1,32 @@
+# 윈도우 실행 파일
+*.exe
+*.dll
+
+# 맥/리눅스 실행 파일
+auth
+main
+test
+debug
+
+# 테스트 커버리지 리포트
+*.out
+coverage.txt
+
+# Go 워크스페이스 파일 (로컬 개발용)
+go.work
+
+# 의존성 폴더
+vendor/
+
+# 에디터 설정
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS 시스템 파일
+.DS_Store
+Thumbs.db
+
+# 환경 변수
+.env
